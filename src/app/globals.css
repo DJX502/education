@@ -2,8 +2,46 @@
 
 @theme {
   --color-theme: #059669;
+  --color-second: #fcd649;
 }
 
 .theme-btn {
-  @apply bg-theme text-white font-medium py-2 px-4 rounded-md cursor-pointer hover:bg-theme/80 transition duration-300;
+  @apply bg-theme text-white font-medium py-1 px-4 rounded-md cursor-pointer hover:bg-theme/80 transition duration-300;
+}
+.theme-btn-outline {
+  @apply border border-theme text-theme font-medium py-1 px-4 rounded-md cursor-pointer hover:bg-theme/20 hover:text-theme transition duration-300;
+}
+.theme-btn2 {
+  @apply bg-second text-black font-medium py-1 px-4 rounded-md cursor-pointer hover:bg-second/80 transition duration-300;
+}
+.mainBox {
+  @apply mx-auto container w-full py-2 px-4 md:px-2;
+}
+
+.heading {
+  @apply text-2xl md:text-4xl lg:text-6xl font-bold;
+}
+.subHeading {
+  @apply text-xl md:text-2xl lg:text-3xl font-semibold;
+}
+.bodyText {
+  @apply text-base md:text-lg lg:text-xl font-semibold;
+}
+.smallText {
+  @apply text-sm md:text-base font-medium;
+}
+.link {
+  @apply text-xs md:text-sm font-medium;
+}
+
+.search-box {
+  @apply relative flex items-center bg-white  border-2 border-zinc-200  focus-within:border-theme rounded-lg px-4 py-1 transition-all duration-300 w-full;
+}
+
+.search-input {
+  @apply bg-transparent text-base font-medium text-slate-900 outline-none flex-1 pl-4 pr-2 placeholder:text-slate-600;
+}
+
+.search-icon {
+  @apply absolute left-2 text-zinc-400 group-hover:text-theme transition-colors duration-200;
 }
